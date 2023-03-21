@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>  console.log(marks.reduce((tot, num)=>{
+        return tot+num;
+    }, 0))
+        
+        var marks = [1,2,3,4,5]
+        // console.log(marks.slice(2,3));
+        // console.log(marks.splice(2,3))
+        // console.log(marks.indexOf(3))
+        
+        // console.log(marks.filter((e) => e%2==0));
+
+        console.log(marks.reduce((tot, num)=>{
+            return tot+num;
+        }, 0))
+       
+        // console.log(marks.map((num) => num*3))
+
+// sum->map->filter
+        marks.reduce(marks.map((num) => num*3))
+
+    </script>
+</body>
+
+</html>
